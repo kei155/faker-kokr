@@ -5,7 +5,7 @@
 ![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/kei155/faker-kokr)
 
 
-# KOKR
+# FAKER-KOKR
 한글에 특화된 faker javascript 라이브러리입니다.
 
 ## 설치 Installation

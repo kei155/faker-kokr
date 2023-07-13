@@ -22,3 +22,20 @@ describe('number', () => {
     expect(faker.number.unsignedInteger(-10, 10)).to.gte(-10).lte(10)
   })
 })
+
+describe('text', () => {
+  it('무작위 단어 생성', () => {
+    expect(faker.text.word()).to.not.match(/\s/)
+    expect(faker.text.word()).to.be.a('string')
+  })
+
+  it('무작위 단어배열 생성', () => {
+    expect(faker.text.words(3)).to.be.length(3)
+    expect(faker.text.words(15)).to.be.length(15)
+  })
+
+  it('무작위 문장 배열 생성', () => {
+    expect(faker.text.paragraphs(3)).to.be.length(3)
+    expect(faker.text.paragraphs(15)).to.be.length(15)
+  })
+})
